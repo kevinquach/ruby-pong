@@ -70,7 +70,7 @@ class Ball
     when :left
       @x = paddle.x2 + SIZE/2
     when :right
-      @x = paddle.x1 + SIZE/2
+      @x = paddle.x1 - SIZE/2
     end
 
     ratio = (y - paddle.y) / Paddle::HEIGHT

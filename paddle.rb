@@ -12,10 +12,12 @@ class Paddle
   end
 
   def ai_move!(ball)
-    if y > ball.y
-      up!
-    else
-      down!
+    if (y - ball.y).abs > SPEED
+      if y > ball.y
+        up!
+      else
+        down!
+      end
     end
   end
 
